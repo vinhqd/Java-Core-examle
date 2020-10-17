@@ -23,7 +23,7 @@ public class CreateData {
         return createData;
     }
 
-    public void getData() {
+    public void initData() {
         roleModels = SystemData.roleData();
         userModels = SystemData.userData();
         categoryModels = SystemData.categoryData();

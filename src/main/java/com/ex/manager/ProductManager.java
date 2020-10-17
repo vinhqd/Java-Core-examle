@@ -127,7 +127,7 @@ public class ProductManager {
         long cateIdSearch;
         while (true) {
             categoryManager.showCategory();
-            cateIdSearch = su.checkInteger(s, "Nhập giá sản phẩm tìm kiếm: ", SystemConstant.ERROR_MESSAGE);
+            cateIdSearch = su.checkInteger(s, "Nhập id sản phẩm tìm kiếm: ", SystemConstant.ERROR_MESSAGE);
             if (categoryService.findOne(cateIdSearch) != null) {
                 break;
             } else {
