@@ -65,7 +65,7 @@ public class UserManager {
     }
 
     public void deleteUser() {
-        if (getUserByUser().size() != 0) {
+        if (getUserByUserRole().size() != 0) {
             showUsers();
             Scanner s = new Scanner(System.in);
             ScannerUtil su = new ScannerUtil();
@@ -82,7 +82,7 @@ public class UserManager {
         }
     }
 
-    private List<UserModel> getUserByUser() {
+    private List<UserModel> getUserByUserRole() {
         List<UserModel> userModels = userService.findAll();
         List<UserModel> users = new ArrayList<>();
         for (UserModel userModel: userModels) {
